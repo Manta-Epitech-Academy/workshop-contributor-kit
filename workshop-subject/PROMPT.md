@@ -316,7 +316,8 @@ Generate the README, never write it by hand:
 5. **Do not touch the runtime.** If the workshop needs a web app that the platform does not have,
    port the subject anyway and tell me in the report.
    - The current runtimes are the `case` entries in `ctfd-workshop-platform/tools/build_runtime.sh`.
-   - Adding a runtime is separate work, described in `docs/RUNTIME_PROTOCOL.md`.
+   - Adding a runtime is separate work, with its own prompt: `workshop-app/PROMPT.md` in
+     https://github.com/Manta-Epitech-Academy/workshop-contributor-kit.
    - `token` validation needs a runtime that computes tokens. Today that is `miniasm`, and
      `voxel-world` on its branch. Otherwise use `checkpoint` or `quiz`.
 6. **Do not invent content.** If a step has no clear objective, no way to check it, or no expected
