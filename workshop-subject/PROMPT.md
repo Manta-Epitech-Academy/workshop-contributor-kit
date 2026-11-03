@@ -271,6 +271,12 @@ answers:
   list it in the report.
 - Never put the solution code in a screenshot.
 
+**3D scenes.** When a step's result is three-dimensional, a scene the student can turn around
+beats a still (convention §3.8b). Keep the still, and add on the next line:
+`<!-- ws:scene {src: scenes/etape3.glb, features: [orbit, zoom, reset, cut], cut: {axis: x, at: 64}} -->`.
+The file is a glTF binary in `scenes/`, exported by the workshop's app (see `workshop-app/PROMPT.md`);
+the still stays the fallback and its alt text the caption. Only do this when the app can export one.
+
 **Answers and secrets.**
 
 - `flags.yaml` holds `flag` answers. `checkpoint_codes.yaml` holds codes chosen by the author.

@@ -240,6 +240,15 @@ Pick one per subject, and per step if needed. The choice is written in the subje
   WebAssembly engine with no JavaScript access.
 - Write down which case you are in.
 
+## Phase 4b — Exporting scenes for the subject (optional)
+
+If the subject wants 3D scenes in place of stills (convention §3.8b), the app's repository is
+where the exporter lives: a script that runs a program in the headless app and writes the result
+as one glTF binary (`.glb`), with textures inside. `voxel-world_runtime/scripts/export_scene.py`
+is the model: visible faces only, merged, textures tiled, a top-level node named `cut` holding
+the cut-away version when asked, and an optional still rendered with the same camera. The output
+is data, never code.
+
 ## Phase 5 — Rules that never bend
 
 1. **A runtime never solves a step.** `result` is advisory. Only the student's Submit, or an
