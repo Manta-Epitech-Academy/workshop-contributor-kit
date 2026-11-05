@@ -277,6 +277,11 @@ beats a still (convention §3.8b). Keep the still, and add on the next line:
 The file is a glTF binary in `scenes/`, exported by the workshop's app (see `workshop-app/PROMPT.md`);
 the still stays the fallback and its alt text the caption. Only do this when the app can export one.
 
+**Files to download.** A starter project, a dataset, a PDF: put the file in `fichiers/` and write
+an ordinary link to it, relative to the document: `Télécharge [le kit](fichiers/kit.zip)`
+(convention §3.8c). The platform turns the link into a download card with the file's name and
+size; GitHub opens the file. Any kind of file works; keep each one under 20 MB.
+
 **Answers and secrets.**
 
 - `flags.yaml` holds `flag` answers. `checkpoint_codes.yaml` holds codes chosen by the author.
