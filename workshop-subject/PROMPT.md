@@ -277,6 +277,14 @@ beats a still (convention §3.8b). Keep the still, and add on the next line:
 The file is a glTF binary in `scenes/`, exported by the workshop's app (see `workshop-app/PROMPT.md`);
 the still stays the fallback and its alt text the caption. Only do this when the app can export one.
 
+**Animations with chapters.** When an idea moves, a formula built term by term, a loop walking a
+grid, an animation beats a still: a manim scene (3Blue1Brown style) rendered by the capture
+skill's `anim` command into an animated WebP plus a video with chapters, one per
+`self.next_section("…")` in the scene. Keep the WebP as the image and add the marker on the next
+line: `<!-- ws:anim {src: img/x.webm, chapters: img/x.vtt} -->` (convention §3.8d). The platform
+shows a player with play/pause and ‹ › between states; GitHub shows the WebP. Keep the scene's
+source in `anim/`.
+
 **Files to download.** A starter project, a dataset, a PDF: put the file in `fichiers/` and write
 an ordinary link to it, relative to the document: `Télécharge [le kit](fichiers/kit.zip)`
 (convention §3.8c). The platform turns the link into a download card with the file's name and
