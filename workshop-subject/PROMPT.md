@@ -331,14 +331,29 @@ Generate the README, never write it by hand:
    - Text you add, such as the intro, the conclusion or a lead-in sentence, follows the source's tone.
    - Use short, simple sentences, and the same « tu » or « vous » as the source.
    - List every added sentence in the report.
+   - When you do write or rephrase a sentence, this is the register, taken from the maintainer's
+     own edits:
+     - Plain technical words over metaphors and jokes: « multiplication », not « fois » ;
+       « le dernier bloc posé est gardé », not « c'est le dernier qui gagne ». No asides that try
+       to be clever (« C'est pour les humains »). A sentence that makes a lycéen feel slow is a
+       cost, never a flourish.
+     - The student is the subject of the sentence: « Ce que tu dois avoir pour valider cette
+       étape », not « Ce que l'encadrant vérifie ».
+     - A check is something the student can see on screen: « Tout le sol est recouvert
+       d'herbe », not « Les 16 384 colonnes ont un bloc à y = 0 ».
+     - The adult in the room is « l'encadrant », never « l'animateur ».
+     - Do not promise more than the step holds: no « un bonus t'attend » in the intro.
+     - One word of precision when it helps a beginner: « 10 en y (en hauteur) ».
+     - A short story at the top of a step is welcome, as plain prose with no heading, and it
+       names the concept of the step early (« répéter des actions en boucle »).
 4. **No hotlinked images** and no external links where a local copy works.
 5. **Do not touch the runtime.** If the workshop needs a web app that the platform does not have,
    port the subject anyway and tell me in the report.
    - The current runtimes are the `case` entries in `ctfd-workshop-platform/tools/build_runtime.sh`.
    - Adding a runtime is separate work, with its own prompt: `workshop-app/PROMPT.md` in
      https://github.com/Manta-Epitech-Academy/workshop-contributor-kit.
-   - `token` validation needs a runtime that computes tokens. Today that is `miniasm`, and
-     `voxel-world` on its branch. Otherwise use `checkpoint` or `quiz`.
+   - `token` validation needs a runtime that computes tokens. Today that is `miniasm` only:
+     `voxel-world` no longer checks its steps. Otherwise use `checkpoint` or `quiz`.
 6. **Do not invent content.** If a step has no clear objective, no way to check it, or no expected
    result, flag it. Do not fill the gap with your own exercise.
 

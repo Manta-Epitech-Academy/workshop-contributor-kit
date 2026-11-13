@@ -57,7 +57,25 @@ existent.
 - **Pas de secret** (mot de passe, jeton, e-mail personnel) dans un fichier ou un commit.
 - **Rien n'est mis en ligne sans l'équipe** : pas de push sur `main`, pas de déploiement.
 
-Le guide de style des contenus (ton, outils, public) est dans
+## Le ton d'un sujet
+
+Un sujet s'adresse à un lycéen qui découvre, seul devant son écran. Ce que ça impose, tiré des
+relectures de l'équipe :
+
+- **Des mots simples et techniques, pas d'images ni de blagues** : « multiplication » plutôt que
+  « fois », « le dernier bloc posé est gardé » plutôt que « c'est le dernier qui gagne ». Une
+  phrase qui fait se sentir lent coûte toujours plus qu'elle n'amuse.
+- **L'élève est le sujet de la phrase** : « Ce que tu dois avoir pour valider cette étape »,
+  pas « Ce que l'encadrant vérifie ».
+- **Un résultat se décrit comme l'élève le voit à l'écran** : « tout le sol est recouvert
+  d'herbe », pas « les 16 384 colonnes ont un bloc à y = 0 ».
+- **L'adulte dans la salle est « l'encadrant »**, jamais « l'animateur ».
+- **On ne promet pas plus que l'étape ne tient** : pas de « un bonus t'attend » dans l'intro.
+- **Un mot de précision quand il aide** : « 10 en y (en hauteur) ».
+- **Une courte histoire en tête d'étape** est bienvenue, en prose, sans titre, et elle nomme tôt
+  la notion de l'étape (« répéter des actions en boucle »).
+
+Le guide de style complet (outils, public) est dans
 [ContributionGuide](https://github.com/Manta-Epitech-Academy/ContributionGuide).
 
 ## Références
