@@ -18,6 +18,7 @@ participant est suivie. Un atelier, c'est donc deux choses :
 |---|---|
 | [`workshop-subject/PROMPT.md`](workshop-subject/PROMPT.md) | Porter le **sujet** : un atelier en Markdown, PDF, DOCX ou page web devient un dépôt de sujet, vérifié par le linter de la plateforme. |
 | [`workshop-app/PROMPT.md`](workshop-app/PROMPT.md) | Porter ou créer l'**application** : une application web existante (sources ou simple fichier construit), ou une nouvelle, branchée sur la plateforme et capable, si elle le peut, de valider elle-même les étapes. |
+| [`skills/workshop-capture/`](skills/workshop-capture/) | Le **skill de capture** pour Claude Code : captures d'écran et GIF d'une application en marche, cadres et flèches posés par sélecteur, et animations manim (style 3Blue1Brown) rendues en WebP et en vidéo à chapitres. C'est ce que le prompt du sujet utilise pour illustrer chaque étape. |
 
 Ce sont des prompts à donner à un assistant IA de code, Claude Code par exemple. Ils sont en
 anglais parce qu'ils s'adressent à l'IA. L'assistant te parle dans ta langue, et le texte de
@@ -31,11 +32,15 @@ existent.
 
 1. **Rassemble tes fichiers** dans un dossier : le texte, les images, le code de départ, les
    corrigés, et l'application (ses sources, ou ce que tu en as).
-2. **Ouvre ton assistant IA** dans un dossier vide, colle le contenu du prompt (tout ce qui suit
+2. **Installe le skill de capture**, si tu utilises Claude Code : copie `skills/workshop-capture/`
+   dans `~/.claude/skills/`, puis suis la section « Installation » de son `SKILL.md` (Playwright,
+   ffmpeg, manim). Sans lui, l'assistant laisse des marqueurs `[CAPTURE À FAIRE]` à la place des
+   images, et quelqu'un devra les prendre à la main.
+3. **Ouvre ton assistant IA** dans un dossier vide, colle le contenu du prompt (tout ce qui suit
    `PROMPT STARTS HERE`), et dis-lui où sont tes fichiers.
-3. **Réponds à ses questions** et relis le plan qu'il te montre : il attend ton accord avant
+4. **Réponds à ses questions** et relis le plan qu'il te montre : il attend ton accord avant
    d'écrire quoi que ce soit.
-4. **Récupère le résultat** :
+5. **Récupère le résultat** :
    - pour le sujet, un dépôt `<nom>_subject` qui passe le linter ;
    - pour l'application, un dépôt `<nom>_runtime` testé, et les fichiers à ajouter côté
      plateforme.

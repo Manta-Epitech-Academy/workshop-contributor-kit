@@ -267,8 +267,11 @@ answers:
 - The alt text is the caption. Write a sentence, not a filename.
 - Each step that produces something visible needs a picture of the expected result, so the student
   can check alone.
-- Where you have none, write `[CAPTURE À FAIRE : what the screenshot must show]` on its own line, and
-  list it in the report.
+- Take them with the `workshop-capture` skill when it is installed (it is in this kit, under
+  `skills/`): it drives the app headless, writes the image and inserts it in the Markdown with its
+  caption, and never paints text on a picture. Where you have none and the skill is not there,
+  write `[CAPTURE À FAIRE : what the screenshot must show]` on its own line, and list it in the
+  report.
 - Never put the solution code in a screenshot.
 
 **3D scenes.** When a step's result is three-dimensional, a scene the student can turn around
@@ -278,8 +281,8 @@ The file is a glTF binary in `scenes/`, exported by the workshop's app (see `wor
 the still stays the fallback and its alt text the caption. Only do this when the app can export one.
 
 **Animations with chapters.** When an idea moves, a formula built term by term, a loop walking a
-grid, an animation beats a still: a manim scene (3Blue1Brown style) rendered by the capture
-skill's `anim` command into an animated WebP plus a video with chapters, one per
+grid, an animation beats a still: a manim scene (3Blue1Brown style) rendered by the
+`workshop-capture` skill's `anim` command into an animated WebP plus a video with chapters, one per
 `self.next_section("…")` in the scene. Keep the WebP as the image and add the marker on the next
 line: `<!-- ws:anim {src: img/x.webm, chapters: img/x.vtt} -->` (convention §3.8d). The platform
 shows a player with play/pause and ‹ › between states; GitHub shows the WebP. Keep the scene's
